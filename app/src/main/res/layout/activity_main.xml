@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.pathantalabs.android.shareanywhere.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbarFadeDuration="2000"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/shareApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/sharebutton"
+                android:src="@drawable/ic_action_share" />
+
+
+            <ImageView
+                android:id="@+id/rateUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_action_rate" />
+
+
+            <ImageView
+                android:id="@+id/mic_button"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="72dp"
+                android:contentDescription="@string/mic_to_speak"
+                android:src="@drawable/icon_mice" />
+
+            <TextView
+                android:id="@+id/text_tap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mic_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/tap_on_mic_to_share_anywhere"
+                android:textSize="24sp" />
+
+            <com.google.android.gms.plus.PlusOneButton
+                android:id="@+id/googlePlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_tap"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                plus:anotation="standard"
+                plus:size="medium">
+
+            </com.google.android.gms.plus.PlusOneButton>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background">
+
+        <com.google.android.gms.ads.NativeExpressAdView
+            android:id="@+id/nativeAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="FULL_WIDTHx120"
+            ads:adUnitId="@string/nativeUnit">
+
+        </com.google.android.gms.ads.NativeExpressAdView>
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Share AnyWhere</string>
+    <string name="mic_to_speak">Mic to Speak</string>
+    <string name="text_head">Edit &amp; Share </string>
+    <string name="tag_line">Choice is Your\'s</string>
+    <string name="btn1">btn1</string>
+    <string name="btn2">btn2</string>
+    <string name="btn3">btn3</string>
+    <string name="hundrad">approx. 100% Correct</string>
+    <string name="less_hundrad">approx. 95% Correct</string>
+    <string name="less_nine">approx. 90% Correct</string>
+
+    <string name="my_link"><a href="https://play.google.com/store/apps/details?id=com.pathantalabs.android.shareanywhere">&lt;Share Anywhere</a></string>
+    <string name="sharebutton">shareButton</string>
+    <string name="tap_on_mic_to_share_anywhere">Tap on Mic to Share Anywhere</string>
+    <string name="young_geek">Young Geek</string>
+    <string name="share">Share</string>
+    <string name="anywhere">Anywhere</string>
+
+    <string name="nativeUnit">ca-app-pub-4550578723880227/4746801799</string>
+    <string name="appId">ca-app-pub-4550578723880227~1793335392</string>
+    <string name="v1_0">v1.0</string>
+</resources>
